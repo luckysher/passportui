@@ -1,0 +1,284 @@
+        @import "tailwindcss";
+         :root {
+            --blue: #0D65D9;
+            --red: #963131;
+            --bg-warning: linear-gradient(180deg, #FEA90E 0%, #F78310 100%);
+            --bg-gray: linear-gradient(135deg, #b4adad55 0%, rgba(255, 255, 255, 0.878) 100%);
+            --bg-1: #E3EFFF;
+            --bg-2: #1F252D;
+            --bg-3: #eefcffdf;
+            --bg-label-1: #8298AB;
+            --black: #000000;
+            --white: #FFFFFF;
+            --orange: #F78310;
+            --text-color-1: #FEA90F;
+            --text-6xl: 64px;
+            /* overriding tailwind var to fit on front as needed */
+        }
+        
+        * {
+            font-family: "Inter";
+            font-optical-sizing: auto;
+        }
+        
+        body {
+            overflow-x: hidden;
+        }
+        
+        .btn-warning {
+            background: var(--bg-warning);
+        }
+        
+        .btn-primary {
+            background: var(--blue);
+        }
+        
+        .text-red-800 {
+            color: var(--red);
+        }
+        
+        .text-blue-800 {
+            color: var(--blue);
+        }
+        
+        .content {
+            line-height: 40px;
+        }
+        
+        .flex .text-2xl {
+            line-height: 40px;
+        }
+        
+        .process-sec {
+            background: var(--bg-gray);
+        }
+        
+        .process {}
+        
+        .process>div.flex.flex-col {
+            max-height: 450px;
+            min-height: 450px;
+        }
+        
+        .margins {
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        
+        .review-warpper div.flex {
+            /*line-height: 26px;*/
+            font-size: 16px;
+        }
+        
+        .review-warpper {}
+        
+        .review-warpper>div.reviews-count>div.font-light,
+        .review-warpper>div.reviews-count>div.font-light>span {
+            font-family: "Roboto";
+        }
+        
+        .price-card {
+            width: 240px;
+        }
+        
+        .rating-card {
+            width: 358px;
+            background: var(--white);
+        }
+        
+        .pricing-section {
+            background: var(--bg-1);
+        }
+        
+        .pricing-card-heading {
+            background: var(--bg-label-1);
+        }
+        
+        .price-card:hover>.pricing-card-heading {
+            background: var(--blue);
+        }
+        
+        .price-card>button {
+            width: 241px;
+            border-color: var(--orange)
+        }
+        
+        .price-card>button>span {
+            color: var(--orange);
+        }
+        
+        .price-card:hover>button>span {
+            color: var(--white);
+        }
+        
+        .price-card:hover>button {
+            background: var(--orange);
+            color: var(--white);
+        }
+        
+        .btn-group {
+            width: 36%;
+            max-width: 400px;
+        }
+        
+        .text-primary {
+            color: var(--orange);
+        }
+        
+        .section-bg-1 {
+            background: var(--bg-2);
+        }
+        
+        .text-global-1 {
+            color: var(--text-color-1);
+        }
+        
+        .steps {
+            height: 540px;
+        }
+        /* XL Device :1200px. */
+        
+        @media (min-width: 1450px) and (max-width: 1700px) {
+            .btn-group {
+                width: 27%;
+            }
+            .price-card {
+                width: 19%;
+            }
+            .rating-card {
+                width: 32%;
+            }
+            .price-card>button {
+                width: 100%;
+            }
+        }
+        
+        @media (min-width: 1200px) and (max-width: 1449px) {
+            .price-card {
+                width: 19%;
+            }
+            .rating-card {
+                width: 100%;
+            }
+        }
+        
+        @media (min-width: 1200px) and (max-width: 1300px) {
+            .price-card>button {
+                width: 98%;
+            }
+        }
+        
+        @media (min-width: 1200px) and (max-width: 1250px) {
+            .btn-group {
+                width: 34%
+            }
+        }
+        /* LG Device :992px. */
+        
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .passport>img:nth-child(3) {
+                width: 30%;
+            }
+            .price-card>button {
+                width: 100%;
+            }
+            .price-card {
+                width: 19%;
+            }
+            .rating-card {
+                width: 100%;
+            }
+            .btn-group {
+                width: 38%
+            }
+        }
+        
+        @media (min-width: 1024px) and (max-width: 1100px) {
+            .price-card {
+                width: 19%;
+            }
+        }
+        
+        @media (min-width: 992px) and (max-width: 1023px) {
+            .price-card {
+                width: 90%;
+                margin-bottom: 100px;
+            }
+            .btn-group {
+                width: 60%
+            }
+            div.steps>div.flex>div.flex>div.flex>img,
+            div.steps>div.flex>div.flex>div.hidden>img {
+                width: 60%;
+            }
+            .process>div.flex.flex-col {
+                max-height: 320px;
+                min-height: 320px;
+            }
+        }
+        
+        @media only screen and (max-width: 1023px) {
+            .passport>img:nth-child(3) {
+                display: none;
+            }
+            .passport>img:nth-child(2) {
+                width: 50%;
+            }
+        }
+        /* SM Small Device :320px. */
+        
+        @media only screen and (max-width: 991px) {
+            .btn-group {
+                width: 65%
+            }
+            .price-card {
+                width: 90%;
+                margin-bottom: 100px;
+            }
+            .price-card>button {
+                width: 100%;
+            }
+            div.steps>div.flex>div.flex>div.flex>img,
+            div.steps>div.flex>div.flex>div.hidden>img {
+                width: 60%;
+            }
+            .process>div.flex.flex-col {
+                max-height: 320px;
+                min-height: 320px;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .steps {
+                height: 100%;
+            }
+        }
+        
+        @media only screen and (max-width: 640px) {
+            .hero,
+            header {
+                background: var(--bg-3);
+            }
+            .main-heading {
+                font-size: 2.5rem;
+            }
+            .btn-primary {
+                background: var(--bg-warning);
+            }
+            .btn-group {
+                width: 60%;
+                min-width: 320px;
+            }
+            .rating-card {
+                width: 100%;
+            }
+            .process>div.flex.flex-col {
+                max-height: 370px;
+                min-height: 370px;
+            }
+        }
+        /* SM Small Device :550px. */
+        
+        @media only screen and (min-width: 768px) and (max-width: 991px) {}
+        
+        @media only screen and (min-width: 300px) and (max-width: 767px) {}
