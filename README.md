@@ -39,8 +39,11 @@ Screenshots of developed UI on right side along with figma design on left side s
 ![basic-features](https://github.com/luckysher/passportui/blob/main/screens/section-7-ui.png)	
 ![basic-features](https://github.com/luckysher/passportui/blob/main/screens/section-8-ui.png)	
 
-Full page screen shot of developed page
+Full page screen shot of developed page at full screen
 ---------------------------------------
-![basic-features](https://github.com/luckysher/passportui/blob/main/screens/full_screenshot.png)	
+![basic-features](https://github.com/luckysher/passportui/blob/main/screens/full_screenshot.png)
 
+Full page screen shot of developed page at width 640px
+---------------------------------------
+![basic-features](https://github.com/luckysher/passportui/blob/main/screens/full_screenshot_at_640.png)
 
